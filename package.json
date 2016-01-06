@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "jshint": "jshint app/.",
-    "test": "mocha tests/**/*.js"
+    "test": "mocha tests/"
   },
   "author": "",
   "license": "ISC",
