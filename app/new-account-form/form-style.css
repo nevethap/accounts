@@ -32,14 +32,18 @@ select {
 
 .form-left {
     float: left;
-    width: 48%;
+    width: 50%;
+    padding-left: 10px;
     padding-right: 15px;
+    padding-top: 15px;
 }
 
 .form-right {
     float: right;
-    width: 48%;
+    width: 50%;
+    padding-right: 10px;
     padding-left: 15px;
+    padding-top: 15px;
 }
 
 .text-right {
