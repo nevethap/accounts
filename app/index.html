@@ -1,13 +1,78 @@
-<html>
+<html ng-app="form">
 
   <head>
       <link rel="stylesheet" type="text/css" href="new-account-form/form-style.css">
+      <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
   </head>
 
   <body>
-      <div id = "form-html" w3-include-HTML="new-account-form/form-view.html">>
+    <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="new-account-form/form-app.js"></script>
+
+      <div id = "form-html" ng-controller="form-controller as form">
+
+
+        <form id = "newEntryForm" >
+          <div class = "form-block">
+              <div class = "form-left">
+                  <p>
+                      <label for="account-number">ACCOUNT NUMBER</label>
+                      <input type="text" id="account-number" name="account-number">
+                  </p>
+                  <p>
+                      <label for="account-holder-name">NAME</label>
+                      <input type="text" id="account-holder-name" name="account-holder-name">
+                  </p>
+
+                  <p>
+                      <label for="bank-name">BANK NAME</label>
+                      <input type="text" id="bank_name" name="bank-name">
+                  </p>
+
+                  <p>
+                      <label for="bank-branch-name">BRANCH NAME</label>
+                      <input type="text" id="bank-branch-name" name="bank-branch-name">
+                  </p>
+
+                  <p>
+                      <label for="date-commenced">DATE COMMENCED</label>
+                      <input type="date" id="date-commenced" name="date-commenced">
+                  </p>
+              </div>
+              <div class="form-right">
+                  <p>
+                      <label for="date-of-maturity">MATURITY DATE</label>
+                      <input type="date" id="date-of-maturity" name="date-of-maturity" placeholder={{01011992 | 'dd/MM/yyyy'}}>
+                  </p>
+
+                  <p>
+                      <label for="account-type">ACCOUNT TYPE</label>
+                      <select id="account-type" name="account-type">
+                                <option value="single">single</option>
+                                <option value="half-yearly">half-yearly</option>
+                                <option value="yearly">yearly</option>
+                      </select>
+                  </p>
+
+                  <p>
+                      <label for="D">DESCRIPTION</label>
+                  </p>
+                  <p>
+                      <textarea id="description" rows="5" cols="50"></textarea>
+                  </p>
+                  <div class="text-right">
+                      <p>
+                          <button id="form-submit-button" class="btn red">SUBMIT ENTRY</button>
+                      </p>
+                  </div>
+                </div>
+
+        </div>
+        </form>
+
+      </div>
+
   </body>
 
   <script src="assets/w3-include-HTML.js"></script>
-
 </html>
