@@ -2,16 +2,14 @@
 
   <head>
       <link rel="stylesheet" type="text/css" href="new-account-form/form-style.css">
-      <link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
   </head>
 
   <body>
     <script type="text/javascript" src="../node_modules/angular/angular.min.js"></script>
     <script type="text/javascript" src="new-account-form/form-app.js"></script>
+    <script type="text/javascript" src="new-account-form/form-controller.js"></script>
 
       <div id = "form-html" ng-controller="form-controller as form">
-
-
         <form id = "newEntryForm" >
           <div class = "form-block">
               <div class = "form-left">
@@ -42,7 +40,7 @@
               <div class="form-right">
                   <p>
                       <label for="date-of-maturity">MATURITY DATE</label>
-                      <input type="date" id="date-of-maturity" name="date-of-maturity" placeholder={{01011992 | 'dd/MM/yyyy'}}>
+                      <input type="date" id="date-of-maturity" name="date-of-maturity">
                   </p>
 
                   <p>

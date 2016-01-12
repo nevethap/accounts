@@ -1,6 +1,6 @@
 (function() {
 
-  app.controller("form-controller", function() {
-  this.accounts = new_accounts;
+app.controller("form-controller", function() {
 });
+
 })();
