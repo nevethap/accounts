@@ -16,39 +16,40 @@
                   <p>
                       <label for="accountNo">ACCOUNT NUMBER</label>
                       <input type="text" name="accountNo" ng-model="accountNo" required>
-                      <span class="error-msg" ng-cloak ng-show = "newEntryForm.accountNo.$dirty && newEntryForm.accountNo.$invalid">
-                        <span ng-show = "newEntryForm.accountNo.$error.required">Account Number is required.</span>
+                      <span class="error-msg" ng-show = "newEntryForm.accountNo.$dirty && newEntryForm.accountNo.$invalid">
+                        <span ng-cloak ng-show = "newEntryForm.accountNo.$error.required">Account Number is required.</span>
                      </span>
                   </p>
                   <p>
                       <label for="name">NAME</label>
                       <input type="text" name="name" ng-model="name" required>
-                      <span class="error-msg" ng-cloak ng-show = "newEntryForm.name.$dirty && newEntryForm.name.$invalid">
-                        <span ng-show = "newEntryForm.name.$error.required">Name is required.</span>
+                      <span class="error-msg" ng-show = "newEntryForm.name.$dirty && newEntryForm.name.$invalid">
+                        <span ng-cloak ng-show = "newEntryForm.name.$error.required">Name is required.</span>
                      </span>
                   </p>
 
                   <p>
                       <label for="bankName">BANK NAME</label>
                       <input type="text" name="bankName" ng-model="bankName" required>
-                      <span class="error-msg" ng-cloak ng-show = "newEntryForm.bankName.$dirty && newEntryForm.bankName.$invalid">
-                        <span ng-show = "newEntryForm.bankName.$error.required">Bank Name is required.</span>
+                      <span class="error-msg" ng-show = "newEntryForm.bankName.$dirty && newEntryForm.bankName.$invalid">
+                        <span ng-cloak ng-show = "newEntryForm.bankName.$error.required">Bank Name is required.</span>
                      </span>
                   </p>
 
                   <p>
                       <label for="branchName">BRANCH NAME</label>
                       <input type="text" name="branchName" ng-model="branchName" required>
-                      <span class="error-msg" ng-cloak ng-show = "newEntryForm.branchName.$dirty && newEntryForm.branchName.$invalid">
-                        <span ng-show = "newEntryForm.branchName.$error.required">Branch Name is required.</span>
+                      <span class="error-msg" ng-show = "newEntryForm.branchName.$dirty && newEntryForm.branchName.$invalid">
+                        <span ng-cloak ng-show = "newEntryForm.branchName.$error.required">Branch Name is required.</span>
                      </span>
                   </p>
 
                   <p>
                       <label for="dateCommenced">DATE COMMENCED</label>
                       <input type="date" name="dateCommenced" ng-model="dateCommenced" required>
-                  </p>
+                  <p>
               </div>
+
               <div class="form-right">
                   <p>
                       <label for="dateOfMaturity">MATURITY DATE</label>
@@ -72,11 +73,8 @@
                   </p>
                   <div class="text-right">
                       <p>
-                          <button class="btn red" ng-disabled = "newEntryForm.accountNo.$dirty &&
-                        newEntryForm.accountNo.$invalid || newEntryForm.name.$dirty &&
-                        newEntryForm.name.$invalid || newEntryForm.bankName.$dirty &&
-                        newEntryForm.bankName.$invalid || newEntryForm.branchName.$dirty &&
-                        newEntryForm.branchName.$invalid">SUBMIT ENTRY</button>
+                          <button class="btn red" ng-disabled="newEntryForm.accountNo.$error.required || newEntryForm.name.$error.required ||
+                        newEntryForm.bankName.$error.required || newEntryForm.branchName.$error.required || newEntryForm.dateCommenced.$error.required || newEntryForm.dateOfMaturity.$error.required ">SUBMIT ENTRY</button>
                       </p>
                   </div>
                 </div>

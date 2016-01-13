@@ -65,6 +65,12 @@ select {
     color: #f8ecbd;
 }
 
+.btn.red:disabled {
+    background: rgba(220, 44, 44, 0.59);
+    border: 2px solid #dc2c2c;
+    color: #f8ecbd;
+}
+
 .error-msg {
     color: red;
 }
