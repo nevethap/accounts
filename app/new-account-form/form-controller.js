@@ -1,6 +1,7 @@
 (function() {
 
-app.controller("form-controller", function() {
+app.controller("form-controller", function($scope) {
 });
+
 
 })();

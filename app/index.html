@@ -9,39 +9,28 @@
     <script type="text/javascript" src="new-account-form/form-app.js"></script>
     <script type="text/javascript" src="new-account-form/form-controller.js"></script>
 
-      <div id = "form-html" ng-controller="form-controller as form">
+      <div id = "form-html" ng-controller="form-controller as form" ng-submit="form.addAccount()">
         <form name = "newEntryForm" novalidate>
           <div class = "form-block">
+            <p><span class="instruction"> Please fill all the fields below</span></p>
               <div class = "form-left">
                   <p>
                       <label for="accountNo">ACCOUNT NUMBER</label>
                       <input type="text" name="accountNo" ng-model="accountNo" required>
-                      <span class="error-msg" ng-show = "newEntryForm.accountNo.$dirty && newEntryForm.accountNo.$invalid">
-                        <span ng-cloak ng-show = "newEntryForm.accountNo.$error.required">Account Number is required.</span>
-                     </span>
                   </p>
                   <p>
                       <label for="name">NAME</label>
                       <input type="text" name="name" ng-model="name" required>
-                      <span class="error-msg" ng-show = "newEntryForm.name.$dirty && newEntryForm.name.$invalid">
-                        <span ng-cloak ng-show = "newEntryForm.name.$error.required">Name is required.</span>
-                     </span>
                   </p>
 
                   <p>
                       <label for="bankName">BANK NAME</label>
                       <input type="text" name="bankName" ng-model="bankName" required>
-                      <span class="error-msg" ng-show = "newEntryForm.bankName.$dirty && newEntryForm.bankName.$invalid">
-                        <span ng-cloak ng-show = "newEntryForm.bankName.$error.required">Bank Name is required.</span>
-                     </span>
                   </p>
 
                   <p>
                       <label for="branchName">BRANCH NAME</label>
                       <input type="text" name="branchName" ng-model="branchName" required>
-                      <span class="error-msg" ng-show = "newEntryForm.branchName.$dirty && newEntryForm.branchName.$invalid">
-                        <span ng-cloak ng-show = "newEntryForm.branchName.$error.required">Branch Name is required.</span>
-                     </span>
                   </p>
 
                   <p>

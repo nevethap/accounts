@@ -35,7 +35,6 @@ select {
     width: 48%;
 
     padding-right: 15px;
-    padding-top: 15px;
 }
 
 .form-right {
@@ -43,7 +42,6 @@ select {
     width: 48%;
 
     padding-left: 15px;
-    padding-top: 15px;
 }
 
 .text-right {
@@ -73,4 +71,11 @@ select {
 
 .error-msg {
     color: red;
+}
+
+.instruction {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.0rem;
+  vertical-align: baseline;
+  color: red;
 }
