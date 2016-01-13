@@ -55,15 +55,14 @@
                   </p>
 
                   <p>
-                      <label for="D">DESCRIPTION</label>
+                      <label for="D">DESCRIPTION(optional)</label>
                   </p>
                   <p>
                       <textarea id="description" rows="5" cols="50"></textarea>
                   </p>
                   <div class="text-right">
                       <p>
-                          <button class="btn red" ng-disabled="newEntryForm.accountNo.$error.required || newEntryForm.name.$error.required ||
-                        newEntryForm.bankName.$error.required || newEntryForm.branchName.$error.required || newEntryForm.dateCommenced.$error.required || newEntryForm.dateOfMaturity.$error.required ">SUBMIT ENTRY</button>
+                          <button class="btn red" ng-cloak ng-disabled="newEntryForm.$invalid ">SUBMIT ENTRY</button>
                       </p>
                   </div>
                 </div>
