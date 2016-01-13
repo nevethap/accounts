@@ -41,7 +41,7 @@ select {
 .form-right {
     float: right;
     width: 48%;
-    
+
     padding-left: 15px;
     padding-top: 15px;
 }
@@ -63,4 +63,8 @@ select {
     background: #dc2c2c;
     border: 2px solid #dc2c2c;
     color: #f8ecbd;
+}
+
+.error-msg {
+    color: red;
 }
