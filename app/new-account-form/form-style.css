@@ -73,9 +73,10 @@ select {
     color: red;
 }
 
-.instruction {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 1.0rem;
-  vertical-align: baseline;
-  color: red;
+.ng-invalid.ng-dirty {
+  border-color: red;
+}
+
+.ng-valid.ng-dirty {
+  border-color: green;
 }
