@@ -9,69 +9,7 @@
     <script type="text/javascript" src="new-account-form/form-app.js"></script>
     <script type="text/javascript" src="new-account-form/form-controller.js"></script>
 
-      <div id = "form-html" ng-controller="form-controller as form" ng-submit="form.addAccount()">
-        <form name = "newEntryForm" novalidate>
-          <div class = "form-block">
-              <div class = "form-left">
-                  <p>
-                      <label for="accountNo">ACCOUNT NUMBER</label>
-                      <input type="text" name="accountNo" ng-model="accountNo" required>
-                  </p>
-                  <p>
-                      <label for="name">NAME</label>
-                      <input type="text" name="name" ng-model="name" required>
-                  </p>
-
-                  <p>
-                      <label for="bankName">BANK NAME</label>
-                      <input type="text" name="bankName" ng-model="bankName" required>
-                  </p>
-
-                  <p>
-                      <label for="branchName">BRANCH NAME</label>
-                      <input type="text" name="branchName" ng-model="branchName" required>
-                  </p>
-
-                  <p>
-                      <label for="dateCommenced">DATE COMMENCED</label>
-                      <input type="date" name="dateCommenced" ng-model="dateCommenced" required>
-                  <p>
-              </div>
-
-              <div class="form-right">
-                  <p>
-                      <label for="dateOfMaturity">MATURITY DATE</label>
-                      <input type="date" id="dateOfMaturity" name="dateOfMaturity" ng-model="dateOfMaturity" required>
-                  </p>
-
-                  <p>
-                      <label for="account-type">ACCOUNT TYPE</label>
-                      <select id="account-type" name="account-type">
-                                <option value="single">single</option>
-                                <option value="half-yearly">half-yearly</option>
-                                <option value="yearly">yearly</option>
-                      </select>
-                  </p>
-
-                  <p>
-                      <label for="D">DESCRIPTION(optional)</label>
-                  </p>
-                  <p>
-                      <textarea id="description" rows="5" cols="50"></textarea>
-                  </p>
-                  <div class="text-right">
-                      <p>
-                          <button class="btn red" ng-cloak ng-disabled="newEntryForm.$invalid ">SUBMIT ENTRY</button>
-                      </p>
-                  </div>
-                </div>
-
-        </div>
-        </form>
-
-      </div>
+    <div ng-include="'new-account-form/form-view.html'"></div>
 
   </body>
-
-  <script src="assets/w3-include-HTML.js"></script>
 </html>
